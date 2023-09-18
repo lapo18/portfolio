@@ -1,0 +1,3 @@
+[build]
+command = "npm run build" # or "yarn build" depending on your setup
+publish = "dist" # specify the build output directory
