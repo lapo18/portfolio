@@ -1,4 +1,3 @@
-import { ArrowExternal } from '../../assets/icons/ArrowExternal';
 import { useTranslation } from 'react-i18next';
 export const AboutParagraph = () => {
   const { t } = useTranslation();
