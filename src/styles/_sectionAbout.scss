@@ -1,0 +1,103 @@
+// Mixins
+@import 'mixins';
+
+$white: #fff;
+$b1: #282c33;
+$b2: #c778dd;
+$b3: #abb2bf;
+
+.about {
+  @include container;
+  &__anchor {
+    display: inline-flex;
+    font-weight: 600;
+    color: $b2;
+  }
+  &__b {
+    font-size: 600;
+    color: $white;
+  }
+  &__icons {
+    @include flex(row, space-between, flex-start);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  &__paragraph {
+    white-space: pre-line;
+    hyphens: balanced;
+  }
+}
+.icons {
+  &__container {
+    @include flex(column, center, flex-start);
+  }
+  &__h3 {
+    @include font(1rem, 600, uppercase);
+    color: $b3;
+  }
+  &__web {
+    @include flex(row);
+    gap: 1rem;
+  }
+
+  //   Icon
+  &__svg {
+    position: relative;
+
+    &:hover {
+      background: rgba(199, 120, 221, 0.2);
+
+      /* Blur_Shadow */
+      box-shadow: 0px 6px 40px 0px rgba(112, 144, 176, 0.2);
+      transition: box-shadow 0.3s linear;
+    }
+
+    &:hover path {
+      fill: $b1;
+      stroke: $b1;
+      transition: stroke, fill, box-shadow, 0.3s linear;
+    }
+    &:hover rect {
+      fill: $b2;
+      stroke: $b2;
+      transition: stroke, fill, box-shadow, 0.3s linear;
+    }
+
+    // Tooltip on hover
+    &:hover .icons__span {
+      display: inline-flex;
+    }
+
+    &--last .icons__span {
+      right: 0.05rem;
+    }
+  }
+  // Tooltip for the stack skills
+  &__span {
+    @include flex(row, center, center);
+    background-color: $b1;
+    border: 1px solid $b2;
+    color: $white;
+    height: 3rem;
+    display: none;
+    padding: 1rem;
+    white-space: nowrap;
+
+    /* Position the tooltip text*/
+    position: absolute;
+    top: -4rem;
+    z-index: 1;
+  }
+
+  &__icon {
+    position: relative;
+    fill: none;
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+}
+.stack {
+  &__container {
+    padding-top: 2rem;
+  }
+}

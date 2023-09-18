@@ -1,0 +1,50 @@
+// Mixins
+@import 'mixins';
+
+// Vars
+$white: #fff;
+$b1: #282c33;
+$b2: #c778dd;
+
+.footer {
+  background-color: #222223;
+  padding: 4rem;
+  text-align: center;
+  @include flex(column, center, center, center);
+  gap: 1rem;
+  &__p {
+    @include font(1.25rem, 500, uppercase);
+
+    &--litle {
+      font-size: 1rem;
+
+      @include hoverNone {
+        display: none;
+      }
+    }
+  }
+  &__span {
+    color: $b2;
+
+    & kbd {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      color: $b1;
+      font-size: 100%;
+      font-family: monospace, sans-serif;
+      vertical-align: baseline;
+      background: transparent;
+      border-color: #e6e6e6 #bebebe #bebebe #e6e6e6;
+      border-style: solid;
+      border-width: 1px 3px 4px;
+      padding: 0 5px;
+      background-color: #d2d2d2;
+      background-color: rgba(210, 210, 210, 0.9);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+  }
+}

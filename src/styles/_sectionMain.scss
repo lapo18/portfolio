@@ -1,0 +1,289 @@
+// Mixins
+@import 'mixins';
+
+$white: #fff;
+$b1: #282c33;
+$b2: #c778dd;
+$b3: #abb2bf;
+
+// Styles
+.home {
+  @include container(1rem 0);
+  @include flex(column, flex-start, flex-start);
+
+  // All content in this section
+  @include media(1024px) {
+    align-items: center;
+    gap: 0.5rem;
+  }
+  @include media(1400px) {
+    gap: 2rem;
+  }
+  @include media(480px) {
+    gap: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 5rem 0;
+  }
+
+  gap: 3rem;
+
+  // Download CV button
+  &__anchor {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-self: flex-start;
+
+    border: 2px solid $b2;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @include media(480px) {
+      width: 100%;
+    }
+
+    // If device cant hover
+    @include hoverNone() {
+      border: 2px solid $b2;
+      color: $white;
+      background: rgba(199, 120, 221, 0.2);
+
+      /* Blur_Shadow */
+      box-shadow: 0px 6px 40px 0px rgba(112, 144, 176, 0.2);
+
+      transition: color, box-shadow, 0.3s linear;
+      & path {
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      // border: 2px solid $b2;
+      color: $white;
+      background: rgba(199, 120, 221, 0.2);
+
+      /* Blur_Shadow */
+      box-shadow: 0px 6px 40px 0px rgba(112, 144, 176, 0.2);
+
+      transition: box-shadow 0.3s linear;
+    }
+
+    &:hover path {
+      fill: $white;
+    }
+  }
+
+  // Gradient image
+  &__background {
+    height: 46.875rem;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 46.875rem;
+    height: 95%;
+    z-index: -1;
+  }
+
+  // My image and the text container
+  &__imagetext {
+    @include flex(row, flex-start);
+
+    width: 100%;
+    gap: 2rem;
+
+    @include media(1024px) {
+      @include flex(column, flex-start, flex-start);
+    }
+
+    @include media(480px) {
+      @include flex(column, center, flex-start);
+    }
+  }
+
+  // Short about me container
+  &__shortabout {
+    @include font(1.2rem, 400, none);
+    @include media(1024px) {
+      text-align: left;
+    }
+  }
+
+  // Iam Oscar... and #ui/front container
+  &__titles {
+    @include flex(column, center, flex-start);
+    @include font(4rem, 600, inherit);
+  }
+
+  &__svg {
+    position: fixed;
+    right: 1rem;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    & path:nth-child(2),
+    > path {
+      fill: $b3;
+      transition: fill 0.3s linear;
+    }
+
+    &:hover {
+      & > path {
+        fill: $white;
+      }
+      & path:nth-child(2) {
+        fill: $b2;
+      }
+    }
+
+    @include hoverNone {
+      & > path {
+        fill: $white;
+      }
+      & path:nth-child(2) {
+        fill: $b2;
+      }
+    }
+
+    @include media(660px) {
+      display: none;
+    }
+  }
+}
+
+.titles {
+  // Iam Oscar Diaz
+  &__title {
+    @include font(4rem, 600, uppercase);
+    margin-bottom: -2rem;
+    @include media(1024px) {
+      @include font(2rem, 600, uppercase);
+      margin-bottom: 0;
+    }
+  }
+
+  // #front/ui container
+  &__subtitle {
+    @include font(5rem, 600, inherit);
+    display: flex;
+    color: $b2;
+
+    @include media(1024px) {
+      @include font(2rem, 600, inherit);
+    }
+    @include media(480px) {
+      @include font(1.7rem, 600, inherit);
+    }
+  }
+}
+
+// My picure and the text 'Iam, #ui/frontend'
+.imagetext {
+  &__picture {
+    width: 10.9375rem;
+    height: 10.9375rem;
+    align-self: center;
+    @include media(480px) {
+      margin: 0 auto;
+    }
+
+    & img {
+      border-radius: 50%;
+    }
+
+    &:hover {
+      /* Blur_Shadow */
+      border-radius: 50%;
+      box-shadow: 0px 6px 40px 0px rgba(112, 144, 176, 0.2);
+      transition: box-shadow 0.3s linear;
+    }
+  }
+}
+//
+.paragraph {
+  &__b {
+    color: $white;
+  }
+}
+
+.shortabout {
+  &__paragraph {
+    hyphens: balanced;
+    white-space: pre-line;
+    @include media(480px) {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Words container
+.subtitle {
+  &__subtitles {
+    @include font(5rem, 600, inherit);
+    position: relative;
+    white-space: nowrap;
+    @include media(1024px) {
+      @include font(2rem, 600, inherit);
+    }
+    @include media(480px) {
+      @include font(1.7rem, 600, inherit);
+    }
+  }
+}
+.subtitles {
+  &__span {
+    color: $white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-transform: uppercase;
+    opacity: 0;
+
+    animation: topToBottom 12.5s linear infinite 0s;
+  }
+
+  &__span:nth-child(2) {
+    animation-delay: 2.5s;
+  }
+  &__span:nth-child(3) {
+    animation-delay: 5s;
+  }
+  &__span:nth-child(4) {
+    animation-delay: 7.5s;
+  }
+  &__span:nth-child(5) {
+    animation-delay: 10s;
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(0px, 50px, 0px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,112 @@
+// Mixins
+@import 'mixins';
+
+// Vars
+$white: #fff;
+$b1: #282c33;
+$b2: #c778dd;
+$padding: 2rem;
+
+// Styles
+.anchor {
+  &__hash {
+    color: $b1;
+  }
+}
+
+.item {
+  &__anchor {
+    //Not needed
+  }
+
+  // Anchor click
+  &__anchor:focus {
+    color: $white;
+    font-weight: 600;
+    transition: color, font-weight, 0.3s linear;
+  }
+  &__anchor:focus {
+    .anchor__hash {
+      color: $b2;
+      font-weight: 600;
+      transition: color, font-weight, 0.3s linear;
+    }
+  }
+
+  //   Anchor hover
+  &__anchor:hover {
+    color: $white;
+    transition: color 0.5s linear;
+
+    .anchor__hash {
+      color: $b2;
+      font-weight: 600;
+      transition: color, font-weight, 0.5s linear;
+    }
+  }
+}
+
+.list {
+  &__item {
+    // Not needed
+  }
+}
+
+// <OSCAR DIAZ/>
+.name {
+  // <
+  &__arrow {
+    color: $b2;
+  }
+  // OSCAR DIAZ
+  &__name {
+    color: $white;
+  }
+}
+
+.navigator {
+  // @include flexConfig(row, space-between);
+  @include flex(row, space-between);
+
+  @include font(1.2rem, normal, uppercase);
+
+  @include container(32px 0);
+
+  position: sticky;
+
+  //   UL list
+  &__list {
+    @include flex(row, center);
+    gap: 3rem;
+
+    @include media(920px) {
+      // Gap between navigator elements
+      gap: 0.5rem;
+    }
+    @include media(760px) {
+      display: none;
+    }
+  }
+
+  //   Lang select
+  &__select {
+    @include flex(row, space-between);
+    gap: 1rem;
+    cursor: pointer;
+    color: $white;
+  }
+
+  //   <OSCAR DIAZ/> container
+  &__name {
+    display: flex;
+  }
+}
+
+.select {
+  appearance: menulist;
+  cursor: pointer;
+  &__option {
+    background-color: $b1;
+    color: $white;
+  }
+}
