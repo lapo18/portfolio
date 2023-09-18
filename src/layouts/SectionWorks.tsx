@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { ArrowExternal } from '../assets/icons/ArrowExternal';
-import { designsItems, worksItems } from '../helpers/json/';
+import { worksItems
+} from '../helpers/json/';
 import { SectionTitle, SectionSubtitle } from '../components/';
 import { WorkInfo, WorkTags, WorkButton, WorkPicture } from '../components/Works/';
 
