@@ -29,7 +29,7 @@ export const worksItems: Props[] = [
       it: '📅 React application to create an event calendar [MERN].',
     },
     img: {
-      src: '../src/assets/img/doctorweb-bg.png',
+      src: 'https://imgur.com/2zZbZcB',
       alt: 'MERN app image',
     },
     tags: ['ASTRO', 'JS', 'TAILWIND'],
