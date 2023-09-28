@@ -29,7 +29,7 @@ export const worksItems: Props[] = [
       it: '📅 React application to create an event calendar [MERN].',
     },
     img: {
-      src: 'https://imgur.com/2zZbZcB',
+      src: 'https://imgur.com/2zZbZcB.png',
       alt: 'MERN app image',
     },
     tags: ['ASTRO', 'JS', 'TAILWIND'],
@@ -50,7 +50,7 @@ export const worksItems: Props[] = [
       en: '📅 React application to create an event calendar [MERN].',
     },
     img: {
-      src: '../src/assets/img/Hoobank-bg.png',
+      src: 'https://i.imgur.com/1KmRSe1.png',
       alt: 'MERN app image',
     },
     tags: ['REACT', 'JS', 'TAILWIND'],
@@ -71,7 +71,7 @@ export const worksItems: Props[] = [
       en: '📰 React application to create a personal diary',
     },
     img: {
-      src: '../src/assets/img/landing-page-bg.png',
+      src: 'https://i.imgur.com/N3OSUCH.png',
       alt: 'Diario app image',
     },
     tags: ['HTML', 'TAILWIND'],
@@ -92,7 +92,7 @@ export const worksItems: Props[] = [
       en: '🦸‍♀️ DC and Marvel heroes React application',
     },
     img: {
-      src: '../src/assets/img/sales-taxes-bg.png',
+      src: 'https://i.imgur.com/Yw7876V.png',
       alt: 'Heroes app image',
     },
     tags: ['BOOTSTRAP', 'JAVASCRIPT', 'HTML'],
