@@ -24,13 +24,13 @@ export const worksItems: Props[] = [
     id: 1,
     name: 'Doctor Web',
     description: {
-      es: '📅 Aplicación React para crear un calendario de eventos [MERN]',
-      en: '📅 React application to create an event calendar [MERN].',
-      it: '📅 React application to create an event calendar [MERN].',
+      es: 'Aplicación en Astro para una Agendia Digital.',
+      en: 'Web app in Astro for a Web Agency.',
+      it: 'Web in Astro per una Web Agency.',
     },
     img: {
       src: 'https://imgur.com/2zZbZcB.png',
-      alt: 'MERN app image',
+      alt: 'Astro app image',
     },
     tags: ['ASTRO', 'JS', 'TAILWIND'],
     anchor_live: {
@@ -46,8 +46,9 @@ export const worksItems: Props[] = [
     id: 2,
     name: 'HooBank',
     description: {
-      es: '📅 Aplicación React para crear un calendario de eventos [MERN]',
-      en: '📅 React application to create an event calendar [MERN].',
+      es: 'Aplicación React ',
+      en: 'React application.',
+      it: 'React app.',
     },
     img: {
       src: 'https://i.imgur.com/1KmRSe1.png',
@@ -67,8 +68,9 @@ export const worksItems: Props[] = [
     id: 3,
     name: 'Landing Page',
     description: {
-      es: '📰 Aplicación React para crear un diario personal',
-      en: '📰 React application to create a personal diary',
+      es: 'Landing Page hecha con TailwindCSS',
+      en: 'Landing Page build with TailwindCSS',
+      en: 'Landing Page fatta con TailwindCSS',
     },
     img: {
       src: 'https://i.imgur.com/N3OSUCH.png',
@@ -88,8 +90,9 @@ export const worksItems: Props[] = [
     id: 4,
     name: 'Sales taxes Problem',
     description: {
-      es: '🦸‍♀️ Aplicación React de heroes de DC y Marvel',
-      en: '🦸‍♀️ DC and Marvel heroes React application',
+      es: 'Ejercicio de calculo de impuestos',
+      en: 'Sales taxes problem',
+      it: 'Problema di calcolo di tasse',
     },
     img: {
       src: 'https://i.imgur.com/Yw7876V.png',
