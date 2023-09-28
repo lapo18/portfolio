@@ -70,7 +70,7 @@ export const worksItems: Props[] = [
     description: {
       es: 'Landing Page hecha con TailwindCSS',
       en: 'Landing Page build with TailwindCSS',
-      en: 'Landing Page fatta con TailwindCSS',
+      it: 'Landing Page fatta con TailwindCSS',
     },
     img: {
       src: 'https://i.imgur.com/N3OSUCH.png',
