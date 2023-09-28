@@ -22,106 +22,86 @@ interface Props {
 export const worksItems: Props[] = [
   {
     id: 1,
-    name: 'MERN Calendar',
+    name: 'Doctor Web',
     description: {
       es: '📅 Aplicación React para crear un calendario de eventos [MERN]',
       en: '📅 React application to create an event calendar [MERN].',
+      it: '📅 React application to create an event calendar [MERN].',
     },
     img: {
-      src: 'https://i.imgur.com/oMrZDLF.png',
+      src: '../src/assets/img/doctorweb-bg.png',
       alt: 'MERN app image',
     },
-    tags: ['MERN', 'JS', 'AXIOS', 'ROUTERDOM'],
+    tags: ['ASTRO', 'JS', 'TAILWIND'],
     anchor_live: {
-      href: 'https://oscarfdiaz.github.io/mern-calendar/',
+      href: 'https://doctorwebaqp.com',
       title: 'Link to online page',
     },
     anchor_github: {
-      href: 'https://github.com/OscarFDiaz/mern-calendar',
+      href: 'https://github.com/lapo18/doctor-web',
       title: 'Link to Github repository',
     },
   },
   {
     id: 2,
-    name: 'MERN Calendar',
+    name: 'HooBank',
     description: {
       es: '📅 Aplicación React para crear un calendario de eventos [MERN]',
       en: '📅 React application to create an event calendar [MERN].',
     },
     img: {
-      src: 'https://i.imgur.com/oMrZDLF.png',
+      src: '../src/assets/img/Hoobank-bg.png',
       alt: 'MERN app image',
     },
-    tags: ['MERN', 'JS', 'AXIOS', 'ROUTERDOM'],
+    tags: ['REACT', 'JS', 'TAILWIND'],
     anchor_live: {
-      href: 'https://oscarfdiaz.github.io/mern-calendar/',
+      href: 'https://resilient-bunny-d733e4.netlify.app',
       title: 'Link to online page',
     },
     anchor_github: {
-      href: 'https://github.com/OscarFDiaz/mern-calendar',
+      href: 'https://github.com/lapo18/drweb',
       title: 'Link to Github repository',
     },
   },
   {
     id: 3,
-    name: 'Diario Personal',
+    name: 'Landing Page',
     description: {
       es: '📰 Aplicación React para crear un diario personal',
       en: '📰 React application to create a personal diary',
     },
     img: {
-      src: 'https://i.imgur.com/qhlxj2f.png',
+      src: '../src/assets/img/landing-page-bg.png',
       alt: 'Diario app image',
     },
-    tags: ['FIREBASE', 'REDUX', 'MUI', 'REACT'],
+    tags: ['HTML', 'TAILWIND'],
     anchor_live: {
-      href: 'https://oscarfdiaz.github.io/react-journal-app/',
+      href: 'https://magical-chebakia-281332.netlify.app',
       title: 'Link to online page',
     },
     anchor_github: {
-      href: 'https://github.com/OscarFDiaz/react-journal-app',
+      href: 'https://github.com/lapo18/agencylandingpage',
       title: 'Link to Github repository',
     },
   },
   {
     id: 4,
-    name: 'Heroes App',
+    name: 'Sales taxes Problem',
     description: {
       es: '🦸‍♀️ Aplicación React de heroes de DC y Marvel',
       en: '🦸‍♀️ DC and Marvel heroes React application',
     },
     img: {
-      src: 'https://i.imgur.com/TeZaTFS.png',
+      src: '../src/assets/img/sales-taxes-bg.png',
       alt: 'Heroes app image',
     },
-    tags: ['BOOTSTRAP', 'ROUTERDOM', 'REACT'],
+    tags: ['BOOTSTRAP', 'JAVASCRIPT', 'HTML'],
     anchor_live: {
-      href: 'https://oscarfdiaz.github.io/react-heroes-app/',
+      href: 'https://transcendent-croquembouche-1b73a3.netlify.app',
       title: 'Link to online page',
     },
     anchor_github: {
-      href: 'https://github.com/OscarFDiaz/react-heroes-app',
-      title: 'Link to Github repository',
-    },
-  },
-  {
-    id: 5,
-    name: 'AddWatermark',
-    description: {
-      es: '📷 Permite añadir una marca de agua a una o más imágenes, para descargarlas',
-      en: '📷 Allows you to add a watermark to one or more images for downloading.',
-    },
-    img: {
-      src: 'https://i.imgur.com/ibCGp5H.png',
-      alt: 'Addwatermark app image',
-    },
-    tags: ['JSZIP', 'JQUERY', 'HTML', 'CSS'],
-    anchor_live: {
-      href: 'https://oscarfdiaz.github.io/AddWaterMarkToImage/',
-      title: 'Link to online page',
-    },
-    anchor_github: {
-      href: 'https://github.com/OscarFDiaz/AddWaterMarkToImage',
+      href: 'https://github.com/lapo18/sales_taxes_bootstrap',
       title: 'Link to Github repository',
     },
   },
